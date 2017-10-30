@@ -1,8 +1,8 @@
 //
 //  ViewController.m
-//  HYTool
+//  HYToolDemo
 //
-//  Created by ocean on 2017/10/28.
+//  Created by ocean on 2017/10/30.
 //  Copyright © 2017年 ocean. All rights reserved.
 //
 
@@ -18,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    NSLog(@"%@", NSHomeDirectory());
+    
     self.view.backgroundColor = [UIColor whiteColor];
     
     NSString *filePath = [HYPathTool hy_getAPPSandboxPathWithType:HYAPPSandboxPathDocuments fileName:@"file.plist"];
@@ -26,7 +28,6 @@
     
     NSDictionary *result = [NSDictionary dictionaryWithContentsOfFile:filePath];
     NSLog(@"%@", result);
-    
 }
 
 
