@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4A00A465E4768164B94D8B03 /* libPods-HYToolDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DEAC7BBA16A56039B35E6424 /* libPods-HYToolDemo.a */; };
 		8E9697FF1FABFE7C002526FE /* HYRegexTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9697FE1FABFE7C002526FE /* HYRegexTool.m */; };
+		8E9698021FAC0492002526FE /* HYEncodeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9698001FAC0492002526FE /* HYEncodeTool.m */; };
 		8ECDF21C1FA71EE600477E8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECDF21B1FA71EE600477E8E /* AppDelegate.m */; };
 		8ECDF21F1FA71EE600477E8E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECDF21E1FA71EE600477E8E /* ViewController.m */; };
 		8ECDF2221FA71EE600477E8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ECDF2201FA71EE600477E8E /* Main.storyboard */; };
@@ -23,6 +24,8 @@
 		88C47A1336D763C9A9899130 /* Pods-HYToolDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYToolDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HYToolDemo/Pods-HYToolDemo.release.xcconfig"; sourceTree = "<group>"; };
 		8E9697FD1FABFE7C002526FE /* HYRegexTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYRegexTool.h; sourceTree = "<group>"; };
 		8E9697FE1FABFE7C002526FE /* HYRegexTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYRegexTool.m; sourceTree = "<group>"; };
+		8E9698001FAC0492002526FE /* HYEncodeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYEncodeTool.m; sourceTree = "<group>"; };
+		8E9698011FAC0492002526FE /* HYEncodeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYEncodeTool.h; sourceTree = "<group>"; };
 		8ECDF2171FA71EE600477E8E /* HYToolDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYToolDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ECDF21A1FA71EE600477E8E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8ECDF21B1FA71EE600477E8E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -100,6 +103,8 @@
 				8ECDF2321FA71EFE00477E8E /* HYPathTool.m */,
 				8E9697FD1FABFE7C002526FE /* HYRegexTool.h */,
 				8E9697FE1FABFE7C002526FE /* HYRegexTool.m */,
+				8E9698011FAC0492002526FE /* HYEncodeTool.h */,
+				8E9698001FAC0492002526FE /* HYEncodeTool.m */,
 			);
 			path = HYTool;
 			sourceTree = "<group>";
@@ -237,6 +242,7 @@
 			files = (
 				8E9697FF1FABFE7C002526FE /* HYRegexTool.m in Sources */,
 				8ECDF21F1FA71EE600477E8E /* ViewController.m in Sources */,
+				8E9698021FAC0492002526FE /* HYEncodeTool.m in Sources */,
 				8ECDF22A1FA71EE600477E8E /* main.m in Sources */,
 				8ECDF21C1FA71EE600477E8E /* AppDelegate.m in Sources */,
 				8ECDF2331FA71F0A00477E8E /* HYPathTool.m in Sources */,
