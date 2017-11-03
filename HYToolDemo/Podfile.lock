@@ -16,17 +16,14 @@ PODS:
     - AFNetworking/NSURLSession
   - HYMyNetwork (0.0.2):
     - AFNetworking (~> 3.1.0)
-  - RegexKitLite (4.0)
 
 DEPENDENCIES:
   - HYMyNetwork
-  - RegexKitLite
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   HYMyNetwork: 1fc5f10e7b85f8408ed4c47dd94ffa50aaafd36f
-  RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
 
-PODFILE CHECKSUM: e9baf96650b5017c19a8681142561d2fd6398afa
+PODFILE CHECKSUM: c8933766165e26ddf19ee03763040b00fcca7793
 
 COCOAPODS: 1.2.1
