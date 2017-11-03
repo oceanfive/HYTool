@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A00A465E4768164B94D8B03 /* libPods-HYToolDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DEAC7BBA16A56039B35E6424 /* libPods-HYToolDemo.a */; };
+		8E9697FF1FABFE7C002526FE /* HYRegexTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9697FE1FABFE7C002526FE /* HYRegexTool.m */; };
 		8ECDF21C1FA71EE600477E8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECDF21B1FA71EE600477E8E /* AppDelegate.m */; };
 		8ECDF21F1FA71EE600477E8E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECDF21E1FA71EE600477E8E /* ViewController.m */; };
 		8ECDF2221FA71EE600477E8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ECDF2201FA71EE600477E8E /* Main.storyboard */; };
@@ -17,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		460C1EA5490836468CE95CC0 /* Pods-HYToolDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYToolDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HYToolDemo/Pods-HYToolDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		88C47A1336D763C9A9899130 /* Pods-HYToolDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYToolDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HYToolDemo/Pods-HYToolDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8E9697FD1FABFE7C002526FE /* HYRegexTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYRegexTool.h; sourceTree = "<group>"; };
+		8E9697FE1FABFE7C002526FE /* HYRegexTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYRegexTool.m; sourceTree = "<group>"; };
 		8ECDF2171FA71EE600477E8E /* HYToolDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYToolDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ECDF21A1FA71EE600477E8E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8ECDF21B1FA71EE600477E8E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +35,7 @@
 		8ECDF2291FA71EE600477E8E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8ECDF2311FA71EFE00477E8E /* HYPathTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYPathTool.h; sourceTree = "<group>"; };
 		8ECDF2321FA71EFE00477E8E /* HYPathTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYPathTool.m; sourceTree = "<group>"; };
+		DEAC7BBA16A56039B35E6424 /* libPods-HYToolDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HYToolDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A00A465E4768164B94D8B03 /* libPods-HYToolDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56A597B4422AFF4FA41251CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEAC7BBA16A56039B35E6424 /* libPods-HYToolDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8ECDF20E1FA71EE600477E8E = {
 			isa = PBXGroup;
 			children = (
 				8ECDF2191FA71EE600477E8E /* HYToolDemo */,
 				8ECDF2181FA71EE600477E8E /* Products */,
+				901FFE5188456475BEDE54B3 /* Pods */,
+				56A597B4422AFF4FA41251CA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,8 +98,19 @@
 			children = (
 				8ECDF2311FA71EFE00477E8E /* HYPathTool.h */,
 				8ECDF2321FA71EFE00477E8E /* HYPathTool.m */,
+				8E9697FD1FABFE7C002526FE /* HYRegexTool.h */,
+				8E9697FE1FABFE7C002526FE /* HYRegexTool.m */,
 			);
 			path = HYTool;
+			sourceTree = "<group>";
+		};
+		901FFE5188456475BEDE54B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				460C1EA5490836468CE95CC0 /* Pods-HYToolDemo.debug.xcconfig */,
+				88C47A1336D763C9A9899130 /* Pods-HYToolDemo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,9 +120,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8ECDF22D1FA71EE600477E8E /* Build configuration list for PBXNativeTarget "HYToolDemo" */;
 			buildPhases = (
+				34ED444BCF34B33293A330C2 /* [CP] Check Pods Manifest.lock */,
 				8ECDF2131FA71EE600477E8E /* Sources */,
 				8ECDF2141FA71EE600477E8E /* Frameworks */,
 				8ECDF2151FA71EE600477E8E /* Resources */,
+				22926DFBF6B0178AB6446FCF /* [CP] Embed Pods Frameworks */,
+				B7B881C715FC89163950635E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -150,11 +182,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		22926DFBF6B0178AB6446FCF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HYToolDemo/Pods-HYToolDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34ED444BCF34B33293A330C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B7B881C715FC89163950635E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HYToolDemo/Pods-HYToolDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8ECDF2131FA71EE600477E8E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E9697FF1FABFE7C002526FE /* HYRegexTool.m in Sources */,
 				8ECDF21F1FA71EE600477E8E /* ViewController.m in Sources */,
 				8ECDF22A1FA71EE600477E8E /* main.m in Sources */,
 				8ECDF21C1FA71EE600477E8E /* AppDelegate.m in Sources */,
@@ -290,6 +371,7 @@
 		};
 		8ECDF22E1FA71EE600477E8E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 460C1EA5490836468CE95CC0 /* Pods-HYToolDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +385,7 @@
 		};
 		8ECDF22F1FA71EE600477E8E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88C47A1336D763C9A9899130 /* Pods-HYToolDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
