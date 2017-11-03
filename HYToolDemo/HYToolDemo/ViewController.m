@@ -29,6 +29,34 @@
     
     NSDictionary *result = [NSDictionary dictionaryWithContentsOfFile:filePath];
     NSLog(@"%@", result);
+    
+    
+//    NSRegularExpressionCaseInsensitive             = 1 << 0,     /* Match letters in the pattern independent of case. */
+//    NSRegularExpressionAllowCommentsAndWhitespace  = 1 << 1,     /* Ignore whitespace and #-prefixed comments in the pattern. */
+//    NSRegularExpressionIgnoreMetacharacters        = 1 << 2,     /* Treat the entire pattern as a literal string. */
+//    NSRegularExpressionDotMatchesLineSeparators    = 1 << 3,     /* Allow . to match any character, including line separators. */
+//    NSRegularExpressionAnchorsMatchLines           = 1 << 4,     /* Allow ^ and $ to match the start and end of lines. */
+//    NSRegularExpressionUseUnixLineSeparators       = 1 << 5,     /* Treat only \n as a line separator (otherwise, all standard line separators are used). */
+//    NSRegularExpressionUseUnicodeWordBoundaries    = 1 << 6      /* Use Unicode TR#29 to specify word boundaries (otherwise, traditional regular expression word boundaries are used). */
+    
+    NSString *expression = @"[0-9]+";
+    NSString *text = @"123";
+    
+    NSError *error = NULL;
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:expression
+                                                                           options:NSRegularExpressionCaseInsensitive
+                                                                             error:&error];
+    if (!error) {
+        [regex enumerateMatchesInString:text options:NSMatchingReportCompletion range:NSMakeRange(0, text.length - 1) usingBlock:^(NSTextCheckingResult * _Nullable result, NSMatchingFlags flags, BOOL * _Nonnull stop) {
+            
+            NSLog(@"%@", NSStringFromRange(result.range));
+            NSLog(@"%llu", result.resultType);
+            
+        }];
+    } else {
+        
+    }
+    
 }
 
 //- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
